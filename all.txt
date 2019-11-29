@@ -1,0 +1,686 @@
+select * from drug;
+
+BEGIN 
+INSERT INTO Drug(Dno,Dname,Dclass,Dguige,Dbrand,Dprice1) VALUES(5,
+  '双黄连口服液',
+  '内',
+  '10*1',
+  '哈药',
+  40
+);
+INSERT INTO Drug(Dno,Dname,Dclass,Dguige,Dbrand,Dprice1) VALUES(6,
+  '西瓜霜',
+  '内',
+  '5*2',
+  '哈药',
+  5
+);
+INSERT INTO Drug(Dno,Dname,Dclass,Dguige,Dbrand,Dprice1) VALUES(7,
+  '金嗓子',
+  '内',
+  '4*3',
+  '广西',
+  10
+);
+INSERT INTO Drug(Dno,Dname,Dclass,Dguige,Dbrand,Dprice1) VALUES(8,
+  '云南白药',
+  '外',
+  '1*1',
+  '云药',
+  5
+);
+INSERT INTO Drug(Dno,Dname,Dclass,Dguige,Dbrand,Dprice1) VALUES(9,
+  '板蓝根冲剂',
+  '内',
+  '20*1',
+  '哈药',
+  20
+);
+INSERT INTO Drug(Dno,Dname,Dclass,Dguige,Dbrand,Dprice1) VALUES(10,
+  '清开灵',
+  '内',
+  '10*1',
+  '芬必得',
+  50
+);
+end;
+
+SELECT * FROM PATIENT;
+
+BEGIN
+INSERT INTO Patient(Pno,Pname,Page,Psex,Pphone,Paddress,Pcase) VALUES(1,
+  '老杨头',
+  80,
+  '男',
+  '12345678912',
+  '沙东龙鸣大学',
+  '发骚腹痛'
+);
+INSERT INTO Patient(Pno,Pname,Page,Psex,Pphone,Paddress,Pcase) VALUES(2,
+  '老耿头',
+  90,
+  '男',
+  '12345678899',
+  '沙东龙鸣大学',
+  '发烧'
+);INSERT INTO Patient(Pno,Pname,Page,Psex,Pphone,Paddress,Pcase) VALUES(3，
+  '老张头',
+  100,
+  '男',
+  '13245678912',
+  '沙东龙鸣大学',
+  '腹痛'
+);
+INSERT INTO Patient(Pno,Pname,Page,Psex,Pphone,Paddress,Pcase) VALUES(4,
+  '老王头',
+  70,
+  '男',
+  '13545678912',
+  '沙东龙鸣大学',
+  '胃癌'
+);
+INSERT INTO Patient(Pno,Pname,Page,Psex,Pphone,Paddress,Pcase) VALUES(5,
+  '老赵头',
+  30,
+  '男',
+  '13222678912',
+  '沙东龙鸣大学',
+  '心脏病'
+);
+INSERT INTO Patient(Pno,Pname,Page,Psex,Pphone,Paddress,Pcase) VALUES(6,
+  '小牛牛',
+  20,
+  '女',
+  '15845678912',
+  '沙东龙鸣学院',
+  '精神病'
+);
+INSERT INTO Patient(Pno,Pname,Page,Psex,Pphone,Paddress,Pcase) VALUES(7,
+  '王二麻',
+  50,
+  '男',
+  '13565678912',
+  '沙东大学',
+  '抑郁症'
+);
+INSERT INTO Patient(Pno,Pname,Page,Psex,Pphone,Paddress,Pcase) VALUES(8,
+  '张三子',
+  33,
+  '男',
+  '12515678912',
+  '龙鸣大学',
+  '毛病'
+);
+INSERT INTO Patient(Pno,Pname,Page,Psex,Pphone,Paddress,Pcase) VALUES(9,
+  '李四五',
+  45,
+  '男',
+  '13645678912',
+  '沙雕学院',
+  '自闭症'
+);
+INSERT INTO Patient(Pno,Pname,Page,Psex,Pphone,Paddress,Pcase) VALUES(10,
+  '薄表哥',
+  42,
+  '男',
+  '13225678912',
+  '沙东龙鸣学院',
+  '红眼病'
+);
+end;
+
+select * from DOCTOR;
+
+BEGIN
+INSERT INTO Doctor(DDno,DDname,DDage,DDsex,DDphone,DDaddress,DDbelong) VALUES(1,
+  '咖喱鸡',
+  40,
+  '男',
+  '12398765432',
+  '沙东龙鸣大学',
+  '内科'
+);
+INSERT INTO Doctor(DDno,DDname,DDage,DDsex,DDphone,DDaddress,DDbelong) VALUES(2,
+  '王守义',
+  50,
+  '男',
+  '13698765432',
+  '沙东大学',
+  '外科'
+);
+INSERT INTO Doctor(DDno,DDname,DDage,DDsex,DDphone,DDaddress,DDbelong) VALUES(3,
+  '王三三',
+  33,
+  '男',
+  '13898765432',
+  '齐鲁大学',
+  '外科'
+);
+INSERT INTO Doctor(DDno,DDname,DDage,DDsex,DDphone,DDaddress,DDbelong) VALUES(4,
+  '王四六',
+  46,
+  '女',
+  '13698789432',
+  '龙鸣大学',
+  '内科'
+);
+INSERT INTO Doctor(DDno,DDname,DDage,DDsex,DDphone,DDaddress,DDbelong) VALUES(5,
+  '王一三',
+  31,
+  '男',
+  '13898765432',
+  '沙东第一大学',
+  '外科'
+);
+INSERT INTO Doctor(DDno,DDname,DDage,DDsex,DDphone,DDaddress,DDbelong) VALUES(6,
+  '李二五',
+  25,
+  '男',
+  '13698745432',
+  '沙东大学',
+  '外科'
+);
+INSERT INTO Doctor(DDno,DDname,DDage,DDsex,DDphone,DDaddress,DDbelong) VALUES(7,
+  '陈牛牛',
+  17,
+  '男',
+  '17863815555',
+  '沙东龙鸣学院',
+  '牛科'
+);
+INSERT INTO Doctor(DDno,DDname,DDage,DDsex,DDphone,DDaddress,DDbelong) VALUES(8,
+  '陈大牛',
+  18,
+  '男',
+  '17863817777',
+  '沙东龙鸣学院',
+  '骨科'
+);
+INSERT INTO Doctor(DDno,DDname,DDage,DDsex,DDphone,DDaddress,DDbelong) VALUES(9,
+  '陈三牛',
+  23,
+  '男',
+  '17863818888',
+  '沙东龙鸣学院',
+  '神经外科'
+);
+INSERT INTO Doctor(DDno,DDname,DDage,DDsex,DDphone,DDaddress,DDbelong) VALUES(10,
+  '陈二牛',
+  16,
+  '男',
+  '17863812222',
+  '沙东龙鸣学院',
+  '精神科'
+);
+end;
+
+SELECT * FROM nurse;
+
+BEGIN
+INSERT INTO Nurse(Nno,Nname,Nage,Nsex,Nphone,Naddress,Nbelong) VALUES (1,
+  '小小红',
+  20,
+  '女',
+  '12398765432',
+  '沙东龙鸣大学',
+  '内科'
+);
+INSERT INTO Nurse(Nno,Nname,Nage,Nsex,Nphone,Naddress,Nbelong) VALUES (2,
+  '小小蓝',
+  18,
+  '女',
+  '12821265432',
+  '沙东龙鸣大学',
+  '内科'
+);
+INSERT INTO Nurse(Nno,Nname,Nage,Nsex,Nphone,Naddress,Nbelong) VALUES (3,
+  '小小绿',
+  20,
+  '女',
+  '13598765432',
+  '沙东龙鸣大学',
+  '内科'
+);
+INSERT INTO Nurse(Nno,Nname,Nage,Nsex,Nphone,Naddress,Nbelong) VALUES (4,
+  '小小白',
+  20,
+  '女',
+  '15698765432',
+  '沙东龙鸣大学',
+  '内科'
+);
+INSERT INTO Nurse(Nno,Nname,Nage,Nsex,Nphone,Naddress,Nbelong) VALUES (5,
+  '小小牛',
+  20,
+  '男',
+  '12378765432',
+  '沙东龙鸣大学',
+  '内科'
+);
+INSERT INTO Nurse(Nno,Nname,Nage,Nsex,Nphone,Naddress,Nbelong) VALUES (6,
+  '大大红',
+  20,
+  '女',
+  '19698765432',
+  '沙东龙鸣大学',
+  '内科'
+);
+INSERT INTO Nurse(Nno,Nname,Nage,Nsex,Nphone,Naddress,Nbelong) VALUES (7,
+  '小红',
+  20,
+  '女',
+  '13598765432',
+  '沙东龙鸣大学',
+  '内科'
+);
+INSERT INTO Nurse(Nno,Nname,Nage,Nsex,Nphone,Naddress,Nbelong) VALUES (8,
+  '小牛',
+  20,
+  '男',
+  '15998765432',
+  '沙东龙鸣大学',
+  '外科'
+);
+INSERT INTO Nurse(Nno,Nname,Nage,Nsex,Nphone,Naddress,Nbelong) VALUES (9,
+  '小小下',
+  20,
+  '男',
+  '12345565432',
+  '沙东龙鸣大学',
+  '内科'
+);
+INSERT INTO Nurse(Nno,Nname,Nage,Nsex,Nphone,Naddress,Nbelong) VALUES (10,
+  '小牛牛',
+  20,
+  '男',
+  '12238765432',
+  '沙东龙鸣大学',
+  '内科'
+);
+end;
+
+select * from WAREHOUSE;
+
+BEGIN
+INSERT INTO Warehouse VALUES(1,
+  '二号仓库',
+  '二楼'
+);
+INSERT INTO Warehouse VALUES(2,
+  '三号仓库',
+  '三楼'
+);
+INSERT INTO Warehouse VALUES(3,
+  '四号仓库',
+  '三楼'
+);
+INSERT INTO Warehouse VALUES(4,
+  '五号仓库',
+  '四楼'
+);
+INsERT INTO Warehouse VALUES(5,
+  '六号仓库',
+  '四楼'
+);
+INSERT INTO Warehouse VALUES(6,
+  '七号仓库',
+  '四楼'
+);
+INSERT INTO Warehouse VALUES(7,
+  '八号仓库',
+  '五楼'
+);
+INSERT INTO Warehouse VALUES(8,
+  '八号仓库',
+  '五楼'
+);
+INSERT INTO Warehouse VALUES(9,
+  '九号仓库',
+  '五楼'
+);
+INSERT INTO Warehouse VALUES(10,
+  '十号仓库',
+  '六楼'
+);
+end;
+
+SELECT * FROM use;
+
+BEGIN
+INSERT INTO Use VALUES(1,
+  1,
+  1,
+  '2019-11-20',
+  9
+);
+INSERT INTO Use VALUES(2,
+  1,
+  2,
+  '2019-11-21',
+  10
+);
+INSERT INTO Use VALUES(3,
+  2,
+  1,
+  '2019-11-20',
+  8
+);
+INSERT INTO Use VALUES(4,
+  3,
+  1,
+  '2019-11-22',
+  7
+);
+INSERT INTO Use VALUES(5,
+  1,
+  1,
+  '2019-11-25',
+  9
+);
+INSERT INTO Use VALUES(6,
+  1,
+  5,
+  '2019-11-25',
+  5
+);
+INSERT INTO Use VALUES(7,
+  2,
+  1,
+  '2019-11-27',
+  9
+);
+INSERT INTO Use VALUES(8,
+  3,
+  2,
+  '2019-11-26',
+  9
+);
+INSERT INTO Use VALUES(9,
+  1,
+  1,
+  '2019-11-26',
+  6
+);
+INSERT INTO Use VALUES(10,
+  1,
+  2,
+  '2019-11-24',
+  8
+);
+end;
+
+
+select * from WARD;
+
+BEGIN
+INSERT INTO Ward VALUES(1,
+  '内科',
+  1,
+  1,
+  2
+);
+INSERT INTO Ward VALUES(2,
+  '外科',
+  1,
+  1,
+  3
+);
+INSERT INTO Ward VALUES(3,
+  '骨科',
+  2,
+  1,
+  2
+);
+INSERT INTO Ward VALUES(4,
+  '神外科',
+  2,
+  1,
+  2
+);
+INSERT INTO Ward VALUES(5,
+  '神内科',
+  3,
+  1,
+  3
+);
+INSERT INTO Ward VALUES(6,
+  '精神科',
+  4,
+  1,
+  4
+);
+INSERT INTO Ward VALUES(7,
+  '皮肤科',
+  2,
+  1,
+  5
+);
+INSERT INTO Ward VALUES(8,
+  '内分泌科',
+  3,
+  1,
+  7
+);
+INSERT INTO Ward VALUES(9,
+  '消化科',
+  5,
+  2,
+  5
+);
+INSERT INTO Ward VALUES(10,
+  '心外科',
+  3,
+  1,
+  8
+);
+end;
+
+
+select * from WARDUSE;
+
+BEGIN
+INSERT INTO WardUse VALUES(1,
+  1,
+  1,
+  '2019-11-20',
+  ''
+);
+INSERT INTO WardUse VALUES(2,
+  2,
+  2,
+  '2019-11-20',
+  ''
+);
+INSERT INTO WardUse VALUES(3,
+  2,
+  2,
+  '2019-11-21',
+  ''
+);
+INSERT INTO WardUse VALUES(4,
+  4,
+  1,
+  '2019-11-21',
+  ''
+);
+INSERT INTO WardUse VALUES(6,
+  5,
+  1,
+  '2019-11-25',
+  ''
+);
+INSERT INTO WardUse VALUES(5,
+  5,
+  1,
+  '2019-11-21',
+  ''
+);
+INSERT INTO WardUse VALUES(7,
+  3,
+  4,
+  '2019-11-25',
+  ''
+);
+INSERT INTO WardUse VALUES(8,
+  2,
+  1,
+  '2019-11-23',
+  ''
+);
+INSERT INTO WardUse VALUES(9,
+  2,
+  7,
+  '2019-11-21',
+  ''
+);
+INSERT INTO WardUse VALUES(10,
+  5,
+  8,
+  '2019-11-24',
+  ''
+);
+end;
+
+CREATE TABLE Rubbish(
+  Rclass VARCHAR2(8) PRIMARY KEY,
+  Rname VARCHAR2(20) NOT NULL,
+  Rguige VARCHAR2(10),
+  Rnumber NUMBER(7,2) NOT NULL CHECK(Rnumber>0)
+);
+
+CREATE TABLE Clean(
+  Wno NUMBER PRIMARY KEY REFERENCES Ward(Wno),
+  Ctime DATE,
+  Ccleaner VARCHAR2(10) NOT NULL
+);
+
+SELECT * FROM rubbish;
+SELECT * FROM clean;
+select * from ward;
+
+begin
+INSERT INTO clean(wno,ctime,CCLEANER) VALUES (1,'2019-12-24','twodog');
+INSERT INTO clean VALUES (2,'2019-11-23','二狗');
+INSERT INTO clean VALUES (3,'2019-11-23','二狗');
+INSERT INTO clean VALUES (4,'2019-11-23','牛牛');
+INSERT INTO clean VALUES (5,'2019-11-24','牛牛');
+INSERT INTO clean VALUES (6,'2019-11-24','牛牛');
+INSERT INTO clean VALUES (7,'2019-11-24','二狗');
+INSERT INTO clean VALUES (8,'2019-11-25','二狗');
+INSERT INTO clean VALUES (9,'2019-11-25','牛牛');
+INSERT INTO clean VALUES (10,'2019-11-25','二狗');
+END;
+
+begin
+INSERT INTO RUBBISH(RCLASS,RNAME,rguige,rnumber) VALUES ('A','针管','小',20);
+INSERT INTO RUBBISH(RCLASS,RNAME,rguige,rnumber) VALUES ('B','注射器','大',20);
+INSERT INTO RUBBISH(RCLASS,RNAME,rguige,rnumber) VALUES ('C','小玻璃瓶','小',20);
+INSERT INTO RUBBISH(RCLASS,RNAME,rguige,rnumber) VALUES ('D','针头','小',50);
+INSERT INTO RUBBISH(RCLASS,RNAME,rguige,rnumber) VALUES ('E','缝合线','小',30);
+INSERT INTO RUBBISH(RCLASS,RNAME,rguige,rnumber) VALUES ('F','棉球','小',20);
+INSERT INTO RUBBISH(RCLASS,RNAME,rguige,rnumber) VALUES ('G','木棒','小',20);
+INSERT INTO RUBBISH(RCLASS,RNAME,rguige,rnumber) VALUES ('H','手套','中',20);
+INSERT INTO RUBBISH(RCLASS,RNAME,rguige,rnumber) VALUES ('I','手术刀','小',5);
+INSERT INTO RUBBISH(RCLASS,RNAME,rguige,rnumber) VALUES ('J','药品','小',300);
+END;
+--创建doctor_view视图，方便查询患者信息
+create view doctor_view as select pname,page,psex,pphone,paddress,pcase from patient;
+select * from DOCTOR_VIEW;
+
+--创建patient_view视图，方便患者查询医生信息
+create view patient_view as select ddname,ddage,ddsex,ddphone,ddbelong from doctor;
+select * from PATIENT_VIEW;
+
+--创建nurse_view视图，方便查询病房信息
+create view nurse_view as select pno,ddno,nno,wuintime from warduse;
+select * from nurse_view;
+
+create TABLE patient_log(
+  l_user  VARCHAR2(15),
+  l_type  VARCHAR2(15),
+  l_date  VARCHAR2(30)
+);
+
+select * from PATIENT_LOG;
+select * from drug;
+
+CREATE OR REPLACE TRIGGER patient_TRIGGER
+ AFTER DELETE OR INSERT OR UPDATE ON patient
+DECLARE
+ V_TYPE TEST_LOG.L_TYPE%TYPE;
+BEGIN
+ IF INSERTING THEN
+  --INSERT触发
+  V_TYPE := 'INSERT';
+  DBMS_OUTPUT.PUT_LINE('记录已经成功插入，并已记录到日志');
+ ELSIF UPDATING THEN
+  --UPDATE触发
+  V_TYPE := 'UPDATE';
+  DBMS_OUTPUT.PUT_LINE('记录已经成功更新，并已记录到日志');
+ ELSIF DELETING THEN
+  --DELETE触发
+  V_TYPE := 'DELETE';
+  DBMS_OUTPUT.PUT_LINE('记录已经成功删除，并已记录到日志');
+ END IF;
+ INSERT INTO patient_log
+ VALUES
+  (USER, V_TYPE, TO_CHAR(SYSDATE, 'yyyy-mm-dd hh24:mi:ss')); --USER表示当前用户名
+END;
+
+INSERT INTO Patient(Pno,Pname,Page,Psex,Pphone,Paddress,Pcase) VALUES(11,
+  '牛二牛',
+  20,
+  '男',
+  '17845678912',
+  '沙东龙鸣学院',
+  '精神病'
+);
+
+DROP TRIGGER patient_TRIGGER;
+
+select * from stored;
+
+CREATE TABLE Stored(
+  Dno NUMBER(5) PRIMARY KEY REFERENCES Drug(Dno),
+  Squantity NUMBER(5) NOT NULL CHECK(Squantity>0),
+  Dprice1 VARCHAR2(5) NOT NULL 
+);
+
+BEGIN
+INSERT INTO Stored VALUES(1,
+  29,100
+);
+INSERT INTO Stored VALUES(2,
+  28,200
+);
+INSERT INTO Stored VALUES(3,
+  27,300
+);
+INSERT INTO Stored VALUES(4,  29,250
+);
+INSERT INTO Stored VALUES(5,
+  26,230
+);
+INSERT INTO Stored VALUES(6,
+  25,220
+);
+INSERT INTO Stored VALUES(7,
+  29,210
+);
+INSERT INTO Stored VALUES(8,
+  20,320
+);
+INSERT INTO Stored VALUES(9,
+  22,300
+);
+INSERT INTO Stored VALUES(10,
+  26,100
+);
+end;
+
+
+
+create UNIQUE INDEX indx on patient(pno,pname,page,psex,pphone,paddress,pcase);
+select * from all_indexes where table_name = 'patient';
+select* from all_ind_columns where table_name = 'patient';
+SELECT * FROM patient where pno BETWEEN 0 and 10;
